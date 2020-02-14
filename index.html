@@ -119,13 +119,9 @@ $("body").bind("contextmenu", function() {
 </script>
 </head>
 <body>
+<audio src='loveme.mp3' autoplay='autoplay' loop='loop'></audio>
 <script type="text/javascript">
 //<!CDATA[
-var bodyBgs = [];
-bodyBgs[0] = "loveme.mp3";
-bodyBgs[1] = "loveme.mp3";
-bodyBgs[2] = "loveme.mp3";
-var randomBgIndex = Math.round( Math.random() * 2 ); document.write('<audio src='+bodyBgs[randomBgIndex]+' autoplay=\'autoplay\' loop=\'loop\'></audio>');
 //]]>
 </script>
 <!--下面是浮动的桃心-->
@@ -190,8 +186,8 @@ var randomBgIndex = Math.round( Math.random() * 2 ); document.write('<audio src=
 
 
 <div id="gallery" class="fullscreen"></div>
-	<div id="nav" class="navbar" style="display:none;">
-        <button id="preview">&lt; 前一张</button>
+	<div id="nav" class="navbar">
+        <button id="preview">前一张</button>
 	    <button id="next">百变一下</button>
 	</div>
 </body>
