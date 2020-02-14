@@ -1,0 +1,244 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>关小曼，我爱你！我愿用一生的爱来守候你！</title>
+<meta name="keywords" content="关小曼,小可爱,小蠢货">
+<meta name="description" content="关小曼,我爱你,请原谅我的坦白,只有在你的微笑里，我才有呼吸，我才活得有朝气,你的一眸一笑，刻画在我心扉,我为你疯狂，为你着迷，我想住进你的心里,感情上的事情，常常说不明白,不是不想爱，不是不去爱,怕只怕，爱也是一种伤害，爱我，你敢吗？">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/polaroid-gallery.css"/>
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #FF62FF;
+	height: 100%;
+	overflow: hidden;
+}
+.content {
+	width: 60%;
+	color: #dd13ff;
+	height: 100%;
+	top: 20px;
+	left: 10%;
+	font-size: 18px;
+	font-weight: bolder;
+	line-height: 25px;
+	font-family: "微软雅黑";
+	margin-top: 0px;
+	background-color: transparent;
+}
+	@media only screen and (min-width:320px) and (max-width:600px) {
+	.content {
+	width: 80%;
+	color: #90F;
+	height: 100%;
+	top: 20px;
+	left: 10%;
+	font-size: 10px;
+	line-height: 15px;
+}
+	}
+body {
+	color: #FFF;
+	padding: 10px;
+	background: #FFF url(images/img/love.jpg) no-repeat fixed top center;
+	height: 100%;
+	overflow: hidden;
+	z-index:999;
+}
+
+</style>
+<script src="js/jquery-1.7.1.min.js" language="javascript" type="text/javascript"></script>
+<script src="js/tao.js" language="javascript" type="text/javascript"></script>
+<script>
+$(document).ready(function(e) {
+	
+	/*禁止右键和隐藏鼠标*/
+$("body").bind("contextmenu", function() {
+      return false;
+   });
+	/*定义文字最底部显示到哪儿*/
+	
+	
+	
+	var guangs=["　","|","　","|"];
+	var guangBiao="/";
+	var guangSub=0;
+	var guang=setInterval("$.guang()",120);
+	
+	var subs=0;
+    var string="关小曼  ██我爱你██请原谅我的坦白██只有在你的微笑里，我才有呼吸，我才活得有朝气██你的一眸一笑，刻画在我心扉██我为你疯狂，为你着迷，我想住进你的心里██就算全世界离开你，还有一个我来陪，怎么舍得让你受尽冷风吹██就算全世界在下雪，就算候鸟已南飞，还有我在这里，痴痴地等你归██我真的很在乎你，所以我才神经质，默默忍受那伤悲██偶尔耍脾气，不是我本意，其实心血滴██感情上的事情，常常说不明白██不是不想爱，不是不去爱██怕只怕，爱也是一种伤害，爱我，你敢吗？  —————BY ZYL  ";
+	$.intent=function(str){
+		str="　　"+str;
+		//var reg=new RegExp("/█{1,2}/","i"); //创建正则RegExp对象
+        str=str.replace(eval("/█/gi"),"█");
+
+		return str;
+	}
+	string=$.intent(string);
+	
+	var echo=setInterval("$.echo()",300);
+		
+	
+	
+	$.guang=function(){
+		  if(guangSub<guangs.length-1){
+			    guangSub++;
+			  }else{
+				  guangSub=0;
+				  }
+			guangBiao=guangs[guangSub];
+			$("#guang").html(guangBiao);
+			
+		}
+	
+	$.echo=function(){
+		if(subs<string.length){
+		$("#txt").html($("#txt").html()+$.repl(string.substr(subs,1)));
+		if($("#guang").offset().top > document.body.scrollHeight){
+		  window.scrollTo(0,$("#guang").offset().top);
+		}
+               $(".des").css("bottom","0px");
+		subs++;
+		}
+	}
+	$.repl=function(str){
+		str=str.replace("\r\n","<br/>");
+		str=str.replace("\n","<br/>");
+		str=str.replace("█","<br/>");
+		return str;
+		}
+});
+
+</script>
+</head>
+<body>
+<script type="text/javascript">
+//<!CDATA[
+var bodyBgs = [];
+bodyBgs[0] = "loveme.mp3";
+bodyBgs[1] = "loveme.mp3";
+bodyBgs[2] = "loveme.mp3";
+var randomBgIndex = Math.round( Math.random() * 2 ); document.write('<audio src='+bodyBgs[randomBgIndex]+' autoplay=\'autoplay\'></audio>');
+//]]>
+</script>
+<!--下面是浮动的桃心-->
+  <SCRIPT LANGUAGE="JavaScript">
+    //图片的过程中，横坐标的轨迹是以一点为中心的正弦曲线
+    //利用了setTimeout函数完成了动画的功能
+    //图片
+	var snowsrc="img/1.png"
+    //雪花个数
+    var no = 15; 
+    //声明变量，xp表示横坐标，yp表示纵坐标>
+    var dx, xp, yp;
+    //声明变量，am表示左右摆动的幅度，stx表示横坐标的偏移步长，sty表示纵坐标的步长>
+    var am, stx, sty;  
+    {
+      //获取当前窗口的宽度
+      clientWidth = document.body.clientWidth;
+      //获取当前窗口的高度
+      clientHeight = document.body.clientHeight;
+    }
+    var dx = new Array();
+    var xp = new Array();
+    var yp = new Array();
+    var am = new Array();
+    var stx = new Array();
+    var sty = new Array();
+    var snowFlakes = new Array();
+    for (i = 0; i < no; ++ i) {  
+      dx[i] = 0;                        
+      //第i个图片的横坐标初始值
+      xp[i] = Math.random()*(clientWidth-50);  
+      yp[i] = Math.random()*clientHeight;//第i个图片的纵坐标初始值
+      am[i] = Math.random()*20;         //第i个图片的左右摆动的幅度
+      stx[i] = 0.02 + Math.random()/10;  //第i个图片y方向的步长
+      sty[i] = 0.7 + Math.random();     //第i个图片y方向的步长
+      //生成一个容纳雪花图片的div，并设置其绝对坐标
+      var snowFlakeDiv = document.createElement('div');
+      snowFlakeDiv.setAttribute('id', 'dot'+ i);
+      snowFlakeDiv.style.position = 'absolute';
+      snowFlakeDiv.style.top = 15;
+      snowFlakeDiv.style.left = 15;
+      //生成一个雪花图片对象，设置宽高，并加入div
+      var snowFlakeImg = document.createElement('img');
+      snowFlakeImg.setAttribute('src', snowsrc);
+      snowFlakeImg.style.width = 195;
+      snowFlakeImg.style.height = 195;
+      //将雪花div加入到document中，并通过数组保存
+      snowFlakeDiv.appendChild(snowFlakeImg);
+      document.body.appendChild(snowFlakeDiv);
+      snowFlakes[i] = snowFlakeDiv;
+    }
+    function snow() {  
+      for (i = 0; i < no; ++ i) {  
+        //第i个图片的纵坐标加上步长
+        yp[i] += sty[i];
+        //如果新坐标超过了屏幕下沿，重置该图片的信息，包括横坐标、纵坐标以及x方向的步长和y方向的步长
+        if (yp[i] > clientHeight-50) {
+          //重新赋值图片的横坐标
+          xp[i] = Math.random()*(clientWidth-am[i]-30);
+          //重新赋值图片的纵坐标
+          yp[i] = 0;
+        }
+        dx[i] += stx[i];//dx变量加上一个步长
+        //直接操作数组中对应的雪花div
+        var snowFlakeDiv = snowFlakes[i];
+        //更新图片的纵坐标
+        snowFlakeDiv.style.top = yp[i];
+        //更新图片的横坐标
+        snowFlakeDiv.style.left = xp[i] + am[i]*Math.sin(dx[i]);
+      }
+      //设定动画刷新的时间周期
+      setTimeout("snow()", 10);
+    }
+    //调用snowIE()函数 
+    snow();
+  </script>
+<!---->
+<center>
+<div align="left" class="content"><span  id="txt"></span><span id="guang"></span>
+<span></span>
+</div>
+</center>
+
+
+<div id="gallery" class="fullscreen"></div>
+	<div id="nav" class="navbar" style="display:none;">
+        <button id="preview">&lt; 前一张</button>
+	    <button id="next">百变一下</button>
+	</div>
+</body>
+<script type="text/javascript" src="js/polaroid-gallery.js"></script>
+	<script>
+		//$(document).ready(function(){
+		window.onload = function () {	    
+			new polaroidGallery("data/data.json");
+			//alert(new polaroidGallery("data/data.json").value);
+};
+	</script>
+ <script  type="text/javascript">  
+        var msg = document.title;
+        var titAn = function() {
+            msg = msg.substring(1,msg.length)+ msg.substring(0,1);
+            document.title = msg;
+        };
+        if (msg.length > 10) {
+            setInterval(function () {
+                titAn()
+            }, 500);
+        }
+</script>
+<script type="text/javascript">
+// 两秒后模拟点击
+setInterval(function () {$('#next').click(); },1200);
+</script>
+</html>
