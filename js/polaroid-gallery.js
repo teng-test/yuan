@@ -91,7 +91,7 @@ var polaroidGallery = (function () {
                 if (currentItem) {
                     select(currentItem);
                 }
-            }, 100);
+            }, 500);
         });
     }
 

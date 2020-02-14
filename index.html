@@ -60,9 +60,13 @@ body {
 <script>
 $(document).ready(function(e) {
 	
+	/*禁止右键和隐藏鼠标*/
 $("body").bind("contextmenu", function() {
       return false;
    });
+	/*定义文字最底部显示到哪儿*/
+
+
 
 	var guangs=["　","|","　","|"];
 	var guangBiao="/";
@@ -74,11 +78,14 @@ $("body").bind("contextmenu", function() {
 	$.intent=function(str){
 		str="　　"+str;
 		str=str.replace(eval("/█/gi"),"█");
+
 		return str;
 	}
 	string=$.intent(string);
 	
 	var echo=setInterval("$.echo()",300);
+
+
 
 	$.guang=function(){
 		  if(guangSub<guangs.length-1){
@@ -114,10 +121,14 @@ $("body").bind("contextmenu", function() {
 <body>
 <script type="text/javascript">
 //<!CDATA[
-var bodyBgs = "loveme.mp3";
-document.write('<audio src='+bodyBgs+' autoplay=\'autoplay\' loop=\'loop\'></audio>');
+var bodyBgs = [];
+bodyBgs[0] = "loveme.mp3";
+bodyBgs[1] = "loveme.mp3";
+bodyBgs[2] = "loveme.mp3";
+var randomBgIndex = Math.round( Math.random() * 2 ); document.write('<audio src='+bodyBgs[randomBgIndex]+' autoplay=\'autoplay\' loop=\'loop\'></audio>');
 //]]>
 </script>
+<!--下面是浮动的桃心-->
   <SCRIPT LANGUAGE="JavaScript">
 	var snowsrc="img/1.png"
     var no = 15;
@@ -161,7 +172,7 @@ document.write('<audio src='+bodyBgs+' autoplay=\'autoplay\' loop=\'loop\'></aud
           xp[i] = Math.random()*(clientWidth-am[i]-30);
           yp[i] = 0;
         }
-        dx[i] += stx[i];//dx变量加上一个步长
+        dx[i] += stx[i];
         var snowFlakeDiv = snowFlakes[i];
         snowFlakeDiv.style.top = yp[i];
         snowFlakeDiv.style.left = xp[i] + am[i]*Math.sin(dx[i]);
